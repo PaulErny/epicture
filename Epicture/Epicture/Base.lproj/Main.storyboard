@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Epicture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="zCC-9Y-ubv">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0K-bh-5lP">
+                                <rect key="frame" x="186" y="348" width="42" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Epicture" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nBU-yA-p9O">
+                                <rect key="frame" x="150" y="287" width="114" height="41"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hDJ-E3-TSW">
+                                <rect key="frame" x="64.666666666666686" y="388.33333333333331" width="285" height="69"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9t4-Vs-ETU">
+                                        <rect key="frame" x="0.0" y="0.0" width="285" height="69"/>
+                                        <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Signin with Imgur" backgroundImage="Google">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="openImgurApi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1up-Pp-3qR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hDJ-E3-TSW" firstAttribute="top" secondItem="o0K-bh-5lP" secondAttribute="bottom" constant="20" id="6ZZ-pH-d2N"/>
+                            <constraint firstAttribute="bottom" secondItem="zCC-9Y-ubv" secondAttribute="bottom" id="AYK-Ss-nwm"/>
+                            <constraint firstAttribute="trailing" secondItem="zCC-9Y-ubv" secondAttribute="trailing" id="BKY-Gg-8uk"/>
+                            <constraint firstItem="nBU-yA-p9O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XFc-JY-XNg"/>
+                            <constraint firstItem="zCC-9Y-ubv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fwK-kb-HVp"/>
+                            <constraint firstItem="o0K-bh-5lP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-90" id="i75-c2-b0C"/>
+                            <constraint firstItem="hDJ-E3-TSW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tW2-GP-pth"/>
+                            <constraint firstItem="zCC-9Y-ubv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uUF-Yf-Fl7"/>
+                            <constraint firstItem="o0K-bh-5lP" firstAttribute="top" secondItem="nBU-yA-p9O" secondAttribute="bottom" constant="20" id="x6Z-B1-1Or"/>
+                            <constraint firstItem="o0K-bh-5lP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xaO-MD-XJm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="129.98500749625188"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="rub-ak-aQ3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Search" id="GOu-8e-1Mq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="dOJ-Bl-bgk"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YQj-kD-eat" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="531" y="587"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="K9S-Vu-bat">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="Xwb-U1-hAH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="L7d-KO-Iqg"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wmt-SC-0IM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="987" y="656"/>
+        </scene>
+        <!--Upload-->
+        <scene sceneID="Stu-y2-JWt">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="Au1-PQ-ZhQ" customClass="UploadViewController" customModule="Epicture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uaI-O6-zYb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="03h-QH-FNM">
+                                <rect key="frame" x="10" y="161" width="394" height="491"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8se-kf-OHd" customClass="CustomButton" customModule="Epicture" customModuleProvider="target">
+                                        <rect key="frame" x="117" y="0.0" width="160" height="50"/>
+                                        <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <state key="normal" title="Select an image">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="SelectImage:" destination="Au1-PQ-ZhQ" eventType="touchUpInside" id="dql-EL-0K2"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UzS-Jx-jbs">
+                                        <rect key="frame" x="30" y="84" width="334" height="239"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WuN-Rl-Wvd" customClass="CustomButton" customModule="Epicture" customModuleProvider="target">
+                                        <rect key="frame" x="117" y="357" width="160" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="RQS-lj-wFu"/>
+                                            <constraint firstAttribute="height" constant="50" id="xqz-bq-eTN"/>
+                                        </constraints>
+                                        <state key="normal" title="Upload to imgur">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="toImgur:" destination="Au1-PQ-ZhQ" eventType="touchUpInside" id="NOk-6u-yh4"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bg5-mZ-rtM">
+                                        <rect key="frame" x="29.666666666666657" y="441" width="335" height="50"/>
+                                        <subviews>
+                                            <progressView opaque="NO" contentMode="scaleAspectFit" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4Nc-Ao-Vex">
+                                                <rect key="frame" x="20" y="24" width="295" height="2"/>
+                                                <color key="progressTintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </progressView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ryv-6N-Nsp">
+                                                <rect key="frame" x="20" y="15" width="295" height="20"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="4Nc-Ao-Vex" secondAttribute="trailing" constant="20" symbolic="YES" id="8uD-Wn-7lG"/>
+                                            <constraint firstItem="4Nc-Ao-Vex" firstAttribute="leading" secondItem="bg5-mZ-rtM" secondAttribute="leading" constant="20" symbolic="YES" id="CfR-31-uxg"/>
+                                            <constraint firstItem="Ryv-6N-Nsp" firstAttribute="top" secondItem="bg5-mZ-rtM" secondAttribute="top" constant="15" id="Eow-vM-dcE"/>
+                                            <constraint firstAttribute="bottom" secondItem="Ryv-6N-Nsp" secondAttribute="bottom" constant="15" id="Oi0-8Y-BaA"/>
+                                            <constraint firstItem="Ryv-6N-Nsp" firstAttribute="leading" secondItem="bg5-mZ-rtM" secondAttribute="leading" constant="20" symbolic="YES" id="R0T-mY-gFf"/>
+                                            <constraint firstAttribute="bottom" secondItem="4Nc-Ao-Vex" secondAttribute="bottom" constant="24" id="V2H-g6-yTX"/>
+                                            <constraint firstAttribute="height" constant="50" id="haL-pc-N9s"/>
+                                            <constraint firstItem="4Nc-Ao-Vex" firstAttribute="top" secondItem="bg5-mZ-rtM" secondAttribute="top" constant="24" id="lNu-RV-6sb"/>
+                                            <constraint firstAttribute="width" constant="335" id="qxI-Il-l18"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ryv-6N-Nsp" secondAttribute="trailing" constant="20" symbolic="YES" id="sQW-Pz-eGg"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="WuN-Rl-Wvd" firstAttribute="height" secondItem="8se-kf-OHd" secondAttribute="height" id="5bm-cW-plQ"/>
+                                    <constraint firstItem="WuN-Rl-Wvd" firstAttribute="width" secondItem="8se-kf-OHd" secondAttribute="width" id="OuJ-oA-edY"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="03h-QH-FNM" firstAttribute="top" secondItem="PYb-fi-he2" secondAttribute="top" constant="117" id="005-oU-DVU"/>
+                            <constraint firstItem="03h-QH-FNM" firstAttribute="leading" secondItem="PYb-fi-he2" secondAttribute="leading" constant="10" id="aao-Rc-jAu"/>
+                            <constraint firstItem="PYb-fi-he2" firstAttribute="trailing" secondItem="03h-QH-FNM" secondAttribute="trailing" constant="10" id="uu5-TT-K6X"/>
+                            <constraint firstItem="PYb-fi-he2" firstAttribute="bottom" secondItem="03h-QH-FNM" secondAttribute="bottom" constant="161" id="vUc-DS-Ue4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PYb-fi-he2"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Upload" image="tray.and.arrow.up.fill" catalog="system" id="F8Z-09-2P7"/>
+                    <connections>
+                        <outlet property="imageView" destination="UzS-Jx-jbs" id="CQm-4t-mXV"/>
+                        <outlet property="imgUrlLabel" destination="Ryv-6N-Nsp" id="2Kh-E3-IpU"/>
+                        <outlet property="progressBar" destination="4Nc-Ao-Vex" id="X6h-Ej-irk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7YX-8I-kkD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1860.8695652173915" y="902.67857142857133"/>
+        </scene>
+        <!--My Tab Bar Controller-->
+        <scene sceneID="xeh-4V-fdo">
+            <objects>
+                <tabBarController storyboardIdentifier="tabbar" id="Fgk-bE-WGr" customClass="MyTabBarController" customModule="Epicture" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="rAD-hY-dab">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="GOu-8e-1Mq" kind="relationship" relationship="viewControllers" id="qCC-gS-VVB"/>
+                        <segue destination="Xwb-U1-hAH" kind="relationship" relationship="viewControllers" id="6jq-6J-cb5"/>
+                        <segue destination="Au1-PQ-ZhQ" kind="relationship" relationship="viewControllers" id="nZP-0d-TVm"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="klr-p3-jc5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="988" y="130"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="414" height="896"/>
+        <image name="Google" width="285" height="69"/>
+        <image name="tray.and.arrow.up.fill" catalog="system" width="64" height="56"/>
+    </resources>
+</document>

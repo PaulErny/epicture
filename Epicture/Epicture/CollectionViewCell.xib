@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCell" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="Epicture" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="131" height="131"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="131" height="131"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KbV-UU-LmI">
+                        <rect key="frame" x="0.0" y="0.0" width="131" height="131"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="wWk-PS-JUB" userLabel="Fav Image View">
+                        <rect key="frame" x="0.5" y="104.5" width="24.5" height="25"/>
+                        <color key="tintColor" systemColor="systemGreenColor"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="wWk-PS-JUB" secondAttribute="bottom" constant="0.5" id="3sJ-GG-maq"/>
+                <constraint firstItem="KbV-UU-LmI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="NRI-0C-MmK"/>
+                <constraint firstItem="wWk-PS-JUB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="0.5" id="QpF-dP-olE"/>
+                <constraint firstItem="wWk-PS-JUB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="103" id="Vby-5d-TQd"/>
+                <constraint firstAttribute="trailing" secondItem="wWk-PS-JUB" secondAttribute="trailing" constant="106" id="l1b-Il-i7q"/>
+                <constraint firstItem="KbV-UU-LmI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="lJE-Id-6bV"/>
+                <constraint firstAttribute="bottom" secondItem="KbV-UU-LmI" secondAttribute="bottom" id="sDV-2b-uVq"/>
+                <constraint firstAttribute="trailing" secondItem="KbV-UU-LmI" secondAttribute="trailing" id="z7O-ZH-JQm"/>
+            </constraints>
+            <connections>
+                <outlet property="imageView" destination="KbV-UU-LmI" id="qjP-SJ-MX0"/>
+                <outlet property="isFavoriteImageView" destination="wWk-PS-JUB" id="8i8-ZU-YKQ"/>
+            </connections>
+            <point key="canvasLocation" x="136.95652173913044" y="143.63839285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

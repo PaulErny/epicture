@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="E73-o0-grf">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Recherche-->
+        <scene sceneID="j6E-ef-PCN">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="sT9-RH-1ca" customClass="SearchViewController" customModule="Epicture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ky1-pt-FvI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vO3-w9-hDg">
+                                <rect key="frame" x="0.0" y="241" width="414" height="572"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6jt-1j-CeK">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="2Ry-0Q-wBD">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="syt-Ij-nC2">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Rechercher sur imgur" textAlignment="center" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="6KG-93-8QV">
+                                <rect key="frame" x="54" y="111" width="233" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3H-Em-WcU" userLabel="Enter">
+                                <rect key="frame" x="295" y="113" width="37" height="30"/>
+                                <state key="normal" title="Enter">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="enter:" destination="sT9-RH-1ca" eventType="touchUpInside" id="ivp-uh-z83"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kZT-JF-34W">
+                                <rect key="frame" x="0.0" y="132" width="414" height="120"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="v3H-Em-WcU" firstAttribute="top" secondItem="OyF-YJ-klz" secondAttribute="top" constant="25" id="3ga-dV-fzA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6KG-93-8QV" secondAttribute="trailing" constant="107" id="4xI-wV-7Vn"/>
+                            <constraint firstItem="vO3-w9-hDg" firstAttribute="top" secondItem="6KG-93-8QV" secondAttribute="bottom" constant="96" id="Bto-5M-SFr"/>
+                            <constraint firstItem="kZT-JF-34W" firstAttribute="leading" secondItem="vO3-w9-hDg" secondAttribute="leading" id="CLg-9U-QAZ"/>
+                            <constraint firstItem="v3H-Em-WcU" firstAttribute="leading" secondItem="6KG-93-8QV" secondAttribute="trailing" constant="8" id="G3e-gF-uAR"/>
+                            <constraint firstItem="kZT-JF-34W" firstAttribute="leading" secondItem="OyF-YJ-klz" secondAttribute="leading" id="KM8-ac-djn"/>
+                            <constraint firstItem="kZT-JF-34W" firstAttribute="centerX" secondItem="Ky1-pt-FvI" secondAttribute="centerX" id="Vh9-f8-14t"/>
+                            <constraint firstItem="6KG-93-8QV" firstAttribute="leading" secondItem="OyF-YJ-klz" secondAttribute="leading" constant="54" id="Y95-TY-UV7"/>
+                            <constraint firstItem="vO3-w9-hDg" firstAttribute="bottom" secondItem="OyF-YJ-klz" secondAttribute="bottom" id="gNn-TR-6IL"/>
+                            <constraint firstItem="kZT-JF-34W" firstAttribute="trailing" secondItem="vO3-w9-hDg" secondAttribute="trailing" id="nNs-NH-9ms"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="6KG-93-8QV" secondAttribute="bottom" constant="668" id="pVc-jX-6Jc"/>
+                            <constraint firstItem="kZT-JF-34W" firstAttribute="top" secondItem="OyF-YJ-klz" secondAttribute="top" constant="44" id="ptd-np-UiO"/>
+                            <constraint firstItem="OyF-YJ-klz" firstAttribute="bottom" secondItem="kZT-JF-34W" secondAttribute="bottom" constant="561" id="rci-zV-CYq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OyF-YJ-klz"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Recherche" id="vFb-zW-EYD"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="collectionView" destination="vO3-w9-hDg" id="0b8-Xu-9cb"/>
+                        <outlet property="input" destination="6KG-93-8QV" id="foS-yZ-F30"/>
+                        <outlet property="pickerView" destination="kZT-JF-34W" id="x68-Da-72h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wih-RM-2ly" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="902.67857142857133"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="IAZ-wZ-Sd1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="E73-o0-grf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Search" image="search" id="8x0-c9-9JF"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZQK-4D-mO7">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sT9-RH-1ca" kind="relationship" relationship="rootViewController" id="jCB-ql-wMM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A8J-Gf-tYy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="902.67857142857133"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="search" width="30" height="30"/>
+    </resources>
+</document>

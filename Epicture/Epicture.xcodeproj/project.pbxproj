@@ -1,0 +1,873 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33F85FE0031B346A086EC001 /* Pods_Epicture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C956784FA7202DD9041362 /* Pods_Epicture.framework */; };
+		54AF6E443F0566A80D425ECF /* Pods_Epicture_EpictureUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 753916B7D9D238EFEE2DC95B /* Pods_Epicture_EpictureUITests.framework */; };
+		906C9A395D00718FADD4FFB2 /* Pods_EpictureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACAA44CC919F2E56F3919597 /* Pods_EpictureTests.framework */; };
+		C4432D4E253DC5D800CC443E /* UploadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4432D4D253DC5D800CC443E /* UploadImage.swift */; };
+		C4432D53253DCAA900CC443E /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4432D52253DCAA900CC443E /* UploadViewController.swift */; };
+		C49040D125406AC70009039B /* SearchImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49040D025406AC70009039B /* SearchImageData.swift */; };
+		C49040D7254086110009039B /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49040D5254086110009039B /* SearchCollectionViewCell.swift */; };
+		C49040D8254086110009039B /* SearchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C49040D6254086110009039B /* SearchCollectionViewCell.xib */; };
+		C4DDF823253F13E300AFB4E0 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DDF822253F13E300AFB4E0 /* SearchViewController.swift */; };
+		DA0B85442543426A00D774D6 /* SearchDescriptionAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B85432543426A00D774D6 /* SearchDescriptionAnnotation.swift */; };
+		DA0B8548254485D100D774D6 /* FavoriteJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B8547254485D100D774D6 /* FavoriteJson.swift */; };
+		DA0B854A2544861600D774D6 /* FavoriteJsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B85492544861600D774D6 /* FavoriteJsonData.swift */; };
+		DA7C1A5F2534A2A400F79BF7 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C1A5E2534A2A400F79BF7 /* MyTabBarController.swift */; };
+		DA7D3C712535B2A9006DFA9F /* ImagesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7D3C702535B2A9006DFA9F /* ImagesData.swift */; };
+		DA7D3C742535E708006DFA9F /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA7D3C732535E708006DFA9F /* Home.storyboard */; };
+		DA7D3C762535E716006DFA9F /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA7D3C752535E716006DFA9F /* Search.storyboard */; };
+		DA7D3C7D253732A4006DFA9F /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7D3C7B253732A4006DFA9F /* CollectionViewCell.swift */; };
+		DA7D3C7E253732A4006DFA9F /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA7D3C7C253732A4006DFA9F /* CollectionViewCell.xib */; };
+		DA7D3C802539F885006DFA9F /* ImageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7D3C7F2539F884006DFA9F /* ImageCollectionViewController.swift */; };
+		DAACD7BF2541C3DB00045A78 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAACD7BE2541C3DB00045A78 /* CustomButton.swift */; };
+		DAACD7D3254320B900045A78 /* SearchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAACD7D2254320B900045A78 /* SearchData.swift */; };
+		DAACD7D5254320E300045A78 /* Ad_config.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAACD7D4254320E300045A78 /* Ad_config.swift */; };
+		DAACD7D72543214200045A78 /* SearchJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAACD7D62543214200045A78 /* SearchJson.swift */; };
+		DAACD7D92543216F00045A78 /* SearchImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAACD7D82543216F00045A78 /* SearchImages.swift */; };
+		DAACD7DB2543258E00045A78 /* SearchTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAACD7DA2543258E00045A78 /* SearchTags.swift */; };
+		DAB8CF2B2523781B00830DB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB8CF2A2523781B00830DB6 /* AppDelegate.swift */; };
+		DAB8CF2D2523781B00830DB6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB8CF2C2523781B00830DB6 /* SceneDelegate.swift */; };
+		DAB8CF2F2523781B00830DB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB8CF2E2523781B00830DB6 /* ViewController.swift */; };
+		DAB8CF322523781B00830DB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB8CF302523781B00830DB6 /* Main.storyboard */; };
+		DAB8CF342523781F00830DB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB8CF332523781F00830DB6 /* Assets.xcassets */; };
+		DAB8CF372523781F00830DB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB8CF352523781F00830DB6 /* LaunchScreen.storyboard */; };
+		DAB8CF422523781F00830DB6 /* EpictureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB8CF412523781F00830DB6 /* EpictureTests.swift */; };
+		DAB8CF4D2523781F00830DB6 /* EpictureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB8CF4C2523781F00830DB6 /* EpictureUITests.swift */; };
+		DAE8017A252F42A30030062B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE80179252F42A30030062B /* HomeViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DAB8CF3E2523781F00830DB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAB8CF1F2523781B00830DB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAB8CF262523781B00830DB6;
+			remoteInfo = Epicture;
+		};
+		DAB8CF492523781F00830DB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAB8CF1F2523781B00830DB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAB8CF262523781B00830DB6;
+			remoteInfo = Epicture;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		48237239390F3CA084A11C24 /* Pods-Epicture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Epicture.release.xcconfig"; path = "Target Support Files/Pods-Epicture/Pods-Epicture.release.xcconfig"; sourceTree = "<group>"; };
+		4D7CE822CA721DBE04F54723 /* Pods-EpictureTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EpictureTests.debug.xcconfig"; path = "Target Support Files/Pods-EpictureTests/Pods-EpictureTests.debug.xcconfig"; sourceTree = "<group>"; };
+		54DC1498AEA7E315F1E4A864 /* Pods-Epicture-EpictureUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Epicture-EpictureUITests.release.xcconfig"; path = "Target Support Files/Pods-Epicture-EpictureUITests/Pods-Epicture-EpictureUITests.release.xcconfig"; sourceTree = "<group>"; };
+		72DBD54BDC5588D6A55506DE /* Pods-Epicture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Epicture.debug.xcconfig"; path = "Target Support Files/Pods-Epicture/Pods-Epicture.debug.xcconfig"; sourceTree = "<group>"; };
+		74852545A74D4C0A88386467 /* Pods-Epicture-EpictureUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Epicture-EpictureUITests.debug.xcconfig"; path = "Target Support Files/Pods-Epicture-EpictureUITests/Pods-Epicture-EpictureUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		753916B7D9D238EFEE2DC95B /* Pods_Epicture_EpictureUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Epicture_EpictureUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95C956784FA7202DD9041362 /* Pods_Epicture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Epicture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACAA44CC919F2E56F3919597 /* Pods_EpictureTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EpictureTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4432D4D253DC5D800CC443E /* UploadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadImage.swift; sourceTree = "<group>"; };
+		C4432D52253DCAA900CC443E /* UploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UploadViewController.swift; path = Epicture/UploadViewController.swift; sourceTree = SOURCE_ROOT; };
+		C49040D025406AC70009039B /* SearchImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchImageData.swift; sourceTree = "<group>"; };
+		C49040D5254086110009039B /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		C49040D6254086110009039B /* SearchCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCollectionViewCell.xib; sourceTree = "<group>"; };
+		C4DDF822253F13E300AFB4E0 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		DA0B85432543426A00D774D6 /* SearchDescriptionAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDescriptionAnnotation.swift; sourceTree = "<group>"; };
+		DA0B8547254485D100D774D6 /* FavoriteJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteJson.swift; sourceTree = "<group>"; };
+		DA0B85492544861600D774D6 /* FavoriteJsonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteJsonData.swift; sourceTree = "<group>"; };
+		DA7C1A5E2534A2A400F79BF7 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
+		DA7D3C702535B2A9006DFA9F /* ImagesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesData.swift; sourceTree = "<group>"; };
+		DA7D3C732535E708006DFA9F /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		DA7D3C752535E716006DFA9F /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		DA7D3C7B253732A4006DFA9F /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		DA7D3C7C253732A4006DFA9F /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		DA7D3C7F2539F884006DFA9F /* ImageCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewController.swift; sourceTree = "<group>"; };
+		DAACD7BE2541C3DB00045A78 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		DAACD7D2254320B900045A78 /* SearchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchData.swift; sourceTree = "<group>"; };
+		DAACD7D4254320E300045A78 /* Ad_config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ad_config.swift; sourceTree = "<group>"; };
+		DAACD7D62543214200045A78 /* SearchJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchJson.swift; sourceTree = "<group>"; };
+		DAACD7D82543216F00045A78 /* SearchImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchImages.swift; sourceTree = "<group>"; };
+		DAACD7DA2543258E00045A78 /* SearchTags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTags.swift; sourceTree = "<group>"; };
+		DAB8CF272523781B00830DB6 /* Epicture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Epicture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB8CF2A2523781B00830DB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DAB8CF2C2523781B00830DB6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DAB8CF2E2523781B00830DB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DAB8CF312523781B00830DB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DAB8CF332523781F00830DB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DAB8CF362523781F00830DB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DAB8CF382523781F00830DB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAB8CF3D2523781F00830DB6 /* EpictureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EpictureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB8CF412523781F00830DB6 /* EpictureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpictureTests.swift; sourceTree = "<group>"; };
+		DAB8CF432523781F00830DB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAB8CF482523781F00830DB6 /* EpictureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EpictureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB8CF4C2523781F00830DB6 /* EpictureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpictureUITests.swift; sourceTree = "<group>"; };
+		DAB8CF4E2523781F00830DB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAE80179252F42A30030062B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E50CB2F71B5C60878BAC42B6 /* Pods-EpictureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EpictureTests.release.xcconfig"; path = "Target Support Files/Pods-EpictureTests/Pods-EpictureTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAB8CF242523781B00830DB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33F85FE0031B346A086EC001 /* Pods_Epicture.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB8CF3A2523781F00830DB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				906C9A395D00718FADD4FFB2 /* Pods_EpictureTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB8CF452523781F00830DB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54AF6E443F0566A80D425ECF /* Pods_Epicture_EpictureUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D841648265489673D94F931 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95C956784FA7202DD9041362 /* Pods_Epicture.framework */,
+				753916B7D9D238EFEE2DC95B /* Pods_Epicture_EpictureUITests.framework */,
+				ACAA44CC919F2E56F3919597 /* Pods_EpictureTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D41AC47B50A21537ED665433 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				72DBD54BDC5588D6A55506DE /* Pods-Epicture.debug.xcconfig */,
+				48237239390F3CA084A11C24 /* Pods-Epicture.release.xcconfig */,
+				74852545A74D4C0A88386467 /* Pods-Epicture-EpictureUITests.debug.xcconfig */,
+				54DC1498AEA7E315F1E4A864 /* Pods-Epicture-EpictureUITests.release.xcconfig */,
+				4D7CE822CA721DBE04F54723 /* Pods-EpictureTests.debug.xcconfig */,
+				E50CB2F71B5C60878BAC42B6 /* Pods-EpictureTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DA0B8545254482C200D774D6 /* jsonStructs */ = {
+			isa = PBXGroup;
+			children = (
+				C4432D4D253DC5D800CC443E /* UploadImage.swift */,
+				DA7D3C702535B2A9006DFA9F /* ImagesData.swift */,
+				DA0B854B2544866600D774D6 /* Favorites */,
+				DA0B8546254485A700D774D6 /* Search */,
+			);
+			path = jsonStructs;
+			sourceTree = "<group>";
+		};
+		DA0B8546254485A700D774D6 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				DAACD7D2254320B900045A78 /* SearchData.swift */,
+				C49040D025406AC70009039B /* SearchImageData.swift */,
+				DAACD7DA2543258E00045A78 /* SearchTags.swift */,
+				DAACD7D4254320E300045A78 /* Ad_config.swift */,
+				DAACD7D62543214200045A78 /* SearchJson.swift */,
+				DAACD7D82543216F00045A78 /* SearchImages.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		DA0B854B2544866600D774D6 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				DA0B85492544861600D774D6 /* FavoriteJsonData.swift */,
+				DA0B8547254485D100D774D6 /* FavoriteJson.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		DA7D3C722535E6E3006DFA9F /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DA7D3C732535E708006DFA9F /* Home.storyboard */,
+				DA7D3C752535E716006DFA9F /* Search.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		DAB8CF1E2523781B00830DB6 = {
+			isa = PBXGroup;
+			children = (
+				DAB8CF292523781B00830DB6 /* Epicture */,
+				DAB8CF402523781F00830DB6 /* EpictureTests */,
+				DAB8CF4B2523781F00830DB6 /* EpictureUITests */,
+				DAB8CF282523781B00830DB6 /* Products */,
+				D41AC47B50A21537ED665433 /* Pods */,
+				4D841648265489673D94F931 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DAB8CF282523781B00830DB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAB8CF272523781B00830DB6 /* Epicture.app */,
+				DAB8CF3D2523781F00830DB6 /* EpictureTests.xctest */,
+				DAB8CF482523781F00830DB6 /* EpictureUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAB8CF292523781B00830DB6 /* Epicture */ = {
+			isa = PBXGroup;
+			children = (
+				C4432D52253DCAA900CC443E /* UploadViewController.swift */,
+				DA7D3C722535E6E3006DFA9F /* storyboards */,
+				DAB8CF2A2523781B00830DB6 /* AppDelegate.swift */,
+				DAB8CF2C2523781B00830DB6 /* SceneDelegate.swift */,
+				DAB8CF2E2523781B00830DB6 /* ViewController.swift */,
+				DAE80179252F42A30030062B /* HomeViewController.swift */,
+				DA7D3C7B253732A4006DFA9F /* CollectionViewCell.swift */,
+				DA7D3C7C253732A4006DFA9F /* CollectionViewCell.xib */,
+				DA7C1A5E2534A2A400F79BF7 /* MyTabBarController.swift */,
+				DA7D3C7F2539F884006DFA9F /* ImageCollectionViewController.swift */,
+				DAACD7BE2541C3DB00045A78 /* CustomButton.swift */,
+				DAB8CF302523781B00830DB6 /* Main.storyboard */,
+				DAB8CF332523781F00830DB6 /* Assets.xcassets */,
+				DAB8CF352523781F00830DB6 /* LaunchScreen.storyboard */,
+				DAB8CF382523781F00830DB6 /* Info.plist */,
+				C4DDF822253F13E300AFB4E0 /* SearchViewController.swift */,
+				C49040D5254086110009039B /* SearchCollectionViewCell.swift */,
+				DA0B8545254482C200D774D6 /* jsonStructs */,
+				DA0B85432543426A00D774D6 /* SearchDescriptionAnnotation.swift */,
+				C49040D6254086110009039B /* SearchCollectionViewCell.xib */,
+			);
+			path = Epicture;
+			sourceTree = "<group>";
+		};
+		DAB8CF402523781F00830DB6 /* EpictureTests */ = {
+			isa = PBXGroup;
+			children = (
+				DAB8CF412523781F00830DB6 /* EpictureTests.swift */,
+				DAB8CF432523781F00830DB6 /* Info.plist */,
+			);
+			path = EpictureTests;
+			sourceTree = "<group>";
+		};
+		DAB8CF4B2523781F00830DB6 /* EpictureUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DAB8CF4C2523781F00830DB6 /* EpictureUITests.swift */,
+				DAB8CF4E2523781F00830DB6 /* Info.plist */,
+			);
+			path = EpictureUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAB8CF262523781B00830DB6 /* Epicture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAB8CF512523781F00830DB6 /* Build configuration list for PBXNativeTarget "Epicture" */;
+			buildPhases = (
+				35F76BD637BAFC915AE3DA10 /* [CP] Check Pods Manifest.lock */,
+				DAB8CF232523781B00830DB6 /* Sources */,
+				DAB8CF242523781B00830DB6 /* Frameworks */,
+				DAB8CF252523781B00830DB6 /* Resources */,
+				FEBC162E2D5B4BBBC64EB979 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Epicture;
+			productName = Epicture;
+			productReference = DAB8CF272523781B00830DB6 /* Epicture.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DAB8CF3C2523781F00830DB6 /* EpictureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAB8CF542523781F00830DB6 /* Build configuration list for PBXNativeTarget "EpictureTests" */;
+			buildPhases = (
+				1025BA03B059F08ADED0BF17 /* [CP] Check Pods Manifest.lock */,
+				DAB8CF392523781F00830DB6 /* Sources */,
+				DAB8CF3A2523781F00830DB6 /* Frameworks */,
+				DAB8CF3B2523781F00830DB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAB8CF3F2523781F00830DB6 /* PBXTargetDependency */,
+			);
+			name = EpictureTests;
+			productName = EpictureTests;
+			productReference = DAB8CF3D2523781F00830DB6 /* EpictureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DAB8CF472523781F00830DB6 /* EpictureUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAB8CF572523781F00830DB6 /* Build configuration list for PBXNativeTarget "EpictureUITests" */;
+			buildPhases = (
+				60D8294A400A53930742C56D /* [CP] Check Pods Manifest.lock */,
+				DAB8CF442523781F00830DB6 /* Sources */,
+				DAB8CF452523781F00830DB6 /* Frameworks */,
+				DAB8CF462523781F00830DB6 /* Resources */,
+				3C6899D14C3E9686236608CB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAB8CF4A2523781F00830DB6 /* PBXTargetDependency */,
+			);
+			name = EpictureUITests;
+			productName = EpictureUITests;
+			productReference = DAB8CF482523781F00830DB6 /* EpictureUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAB8CF1F2523781B00830DB6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Paul Erny";
+				TargetAttributes = {
+					DAB8CF262523781B00830DB6 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					DAB8CF3C2523781F00830DB6 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = DAB8CF262523781B00830DB6;
+					};
+					DAB8CF472523781F00830DB6 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = DAB8CF262523781B00830DB6;
+					};
+				};
+			};
+			buildConfigurationList = DAB8CF222523781B00830DB6 /* Build configuration list for PBXProject "Epicture" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DAB8CF1E2523781B00830DB6;
+			productRefGroup = DAB8CF282523781B00830DB6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAB8CF262523781B00830DB6 /* Epicture */,
+				DAB8CF3C2523781F00830DB6 /* EpictureTests */,
+				DAB8CF472523781F00830DB6 /* EpictureUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAB8CF252523781B00830DB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C49040D8254086110009039B /* SearchCollectionViewCell.xib in Resources */,
+				DAB8CF372523781F00830DB6 /* LaunchScreen.storyboard in Resources */,
+				DAB8CF342523781F00830DB6 /* Assets.xcassets in Resources */,
+				DA7D3C7E253732A4006DFA9F /* CollectionViewCell.xib in Resources */,
+				DAB8CF322523781B00830DB6 /* Main.storyboard in Resources */,
+				DA7D3C742535E708006DFA9F /* Home.storyboard in Resources */,
+				DA7D3C762535E716006DFA9F /* Search.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB8CF3B2523781F00830DB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB8CF462523781F00830DB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1025BA03B059F08ADED0BF17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EpictureTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		35F76BD637BAFC915AE3DA10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Epicture-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C6899D14C3E9686236608CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Epicture-EpictureUITests/Pods-Epicture-EpictureUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Epicture-EpictureUITests/Pods-Epicture-EpictureUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Epicture-EpictureUITests/Pods-Epicture-EpictureUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60D8294A400A53930742C56D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Epicture-EpictureUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEBC162E2D5B4BBBC64EB979 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Epicture/Pods-Epicture-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Epicture/Pods-Epicture-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Epicture/Pods-Epicture-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAB8CF232523781B00830DB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4432D53253DCAA900CC443E /* UploadViewController.swift in Sources */,
+				C4DDF823253F13E300AFB4E0 /* SearchViewController.swift in Sources */,
+				DAACD7D92543216F00045A78 /* SearchImages.swift in Sources */,
+				DAB8CF2F2523781B00830DB6 /* ViewController.swift in Sources */,
+				DAACD7D5254320E300045A78 /* Ad_config.swift in Sources */,
+				DAACD7D72543214200045A78 /* SearchJson.swift in Sources */,
+				C4432D4E253DC5D800CC443E /* UploadImage.swift in Sources */,
+				DAACD7BF2541C3DB00045A78 /* CustomButton.swift in Sources */,
+				DAACD7DB2543258E00045A78 /* SearchTags.swift in Sources */,
+				DAB8CF2B2523781B00830DB6 /* AppDelegate.swift in Sources */,
+				DAE8017A252F42A30030062B /* HomeViewController.swift in Sources */,
+				DA7D3C7D253732A4006DFA9F /* CollectionViewCell.swift in Sources */,
+				DA7D3C802539F885006DFA9F /* ImageCollectionViewController.swift in Sources */,
+				DAB8CF2D2523781B00830DB6 /* SceneDelegate.swift in Sources */,
+				DA0B8548254485D100D774D6 /* FavoriteJson.swift in Sources */,
+				DAACD7D3254320B900045A78 /* SearchData.swift in Sources */,
+				DA0B85442543426A00D774D6 /* SearchDescriptionAnnotation.swift in Sources */,
+				C49040D7254086110009039B /* SearchCollectionViewCell.swift in Sources */,
+				DA7C1A5F2534A2A400F79BF7 /* MyTabBarController.swift in Sources */,
+				DA0B854A2544861600D774D6 /* FavoriteJsonData.swift in Sources */,
+				DA7D3C712535B2A9006DFA9F /* ImagesData.swift in Sources */,
+				C49040D125406AC70009039B /* SearchImageData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB8CF392523781F00830DB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB8CF422523781F00830DB6 /* EpictureTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB8CF442523781F00830DB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB8CF4D2523781F00830DB6 /* EpictureUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DAB8CF3F2523781F00830DB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAB8CF262523781B00830DB6 /* Epicture */;
+			targetProxy = DAB8CF3E2523781F00830DB6 /* PBXContainerItemProxy */;
+		};
+		DAB8CF4A2523781F00830DB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAB8CF262523781B00830DB6 /* Epicture */;
+			targetProxy = DAB8CF492523781F00830DB6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DAB8CF302523781B00830DB6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAB8CF312523781B00830DB6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DAB8CF352523781F00830DB6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAB8CF362523781F00830DB6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DAB8CF4F2523781F00830DB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DAB8CF502523781F00830DB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAB8CF522523781F00830DB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72DBD54BDC5588D6A55506DE /* Pods-Epicture.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CUKPDDT2TD;
+				INFOPLIST_FILE = Epicture/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Epitech.Epicture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DAB8CF532523781F00830DB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48237239390F3CA084A11C24 /* Pods-Epicture.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CUKPDDT2TD;
+				INFOPLIST_FILE = Epicture/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Epitech.Epicture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DAB8CF552523781F00830DB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D7CE822CA721DBE04F54723 /* Pods-EpictureTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CUKPDDT2TD;
+				INFOPLIST_FILE = EpictureTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Epitech.EpictureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Epicture.app/Epicture";
+			};
+			name = Debug;
+		};
+		DAB8CF562523781F00830DB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E50CB2F71B5C60878BAC42B6 /* Pods-EpictureTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CUKPDDT2TD;
+				INFOPLIST_FILE = EpictureTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Epitech.EpictureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Epicture.app/Epicture";
+			};
+			name = Release;
+		};
+		DAB8CF582523781F00830DB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74852545A74D4C0A88386467 /* Pods-Epicture-EpictureUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CUKPDDT2TD;
+				INFOPLIST_FILE = EpictureUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Epitech.EpictureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Epicture;
+			};
+			name = Debug;
+		};
+		DAB8CF592523781F00830DB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54DC1498AEA7E315F1E4A864 /* Pods-Epicture-EpictureUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CUKPDDT2TD;
+				INFOPLIST_FILE = EpictureUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Epitech.EpictureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Epicture;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAB8CF222523781B00830DB6 /* Build configuration list for PBXProject "Epicture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAB8CF4F2523781F00830DB6 /* Debug */,
+				DAB8CF502523781F00830DB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAB8CF512523781F00830DB6 /* Build configuration list for PBXNativeTarget "Epicture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAB8CF522523781F00830DB6 /* Debug */,
+				DAB8CF532523781F00830DB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAB8CF542523781F00830DB6 /* Build configuration list for PBXNativeTarget "EpictureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAB8CF552523781F00830DB6 /* Debug */,
+				DAB8CF562523781F00830DB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAB8CF572523781F00830DB6 /* Build configuration list for PBXNativeTarget "EpictureUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAB8CF582523781F00830DB6 /* Debug */,
+				DAB8CF592523781F00830DB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DAB8CF1F2523781B00830DB6 /* Project object */;
+}
